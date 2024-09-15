@@ -14,7 +14,11 @@ namespace SistemaGestaoProdutos
         {
             TaxaImportacao = taxaImportacao;
         }
-        public double CalculoImportacao() => Preco_Produto * TaxaImportacao+ Quantidade * Preco_Produto;
+        public override double CalculandoTotal()
+        {
+            //return base.CalculandoTotal();  
+            return Preco_Produto * TaxaImportacao+ Quantidade * Preco_Produto;
+        }
 
     }
 }

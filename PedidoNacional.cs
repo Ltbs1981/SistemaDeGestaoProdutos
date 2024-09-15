@@ -14,6 +14,10 @@ namespace SistemaGestaoProdutos
         {
             Imposto = imposto;
         }
-        public double TaxaImpostoNacional() => Preco_Produto * Imposto+ Quantidade * Preco_Produto;
+        public override double CalculandoTotal()
+        {
+            //return base.CalculandoTotal();  
+            return Preco_Produto * Imposto + Quantidade * Preco_Produto;
+        }
     }
 }

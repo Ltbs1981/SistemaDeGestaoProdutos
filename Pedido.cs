@@ -23,7 +23,7 @@ namespace SistemaGestaoProdutos
             Preco_Produto = preco_Produto;
             Data_Pedido = data_Pedido;
         }
-        public double CalculandoTotal() => Quantidade * Preco_Produto;
+        public virtual double CalculandoTotal() => Quantidade * Preco_Produto;
     }
 }
 
