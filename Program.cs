@@ -15,7 +15,11 @@ namespace SistemaGestaoProdutos
             PedidoNacional pedidoNacional = new PedidoNacional(2, "contra-baixo", 1, 100, "14/09/2024", 0.1);
             pedidoNacional.TaxaImpostoNacional();
             Console.WriteLine(pedidoNacional.TaxaImpostoNacional());
-            ;
+
+            PedidoInternacional pedidoInternacional = new PedidoInternacional(3, "aplificador", 1, 500, "15/09/2024", 0.20);
+            pedidoInternacional.CalculoImportacao();
+            Console.WriteLine(pedidoInternacional.CalculoImportacao());
+
         }
     }
 }
